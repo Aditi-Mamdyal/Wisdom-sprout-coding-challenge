@@ -6,7 +6,7 @@ public class day6_sum0 {
         System.out.println(subarray(arr));
         
     }*/
-    public static List<List<Integer>> subarray(int[] arr){
+    public List<List<Integer>> subarray(int[] arr){
     List<List<Integer>> outer=new ArrayList<>();
     int sum=0, i ,j;
     for(i=0;i<arr.length;i++){
