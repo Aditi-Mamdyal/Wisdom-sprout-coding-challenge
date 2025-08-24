@@ -3,12 +3,12 @@ import java.util.Collections;
 import java.util.List;
 
 public class day10_anagrams {
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
         String arr[]={"a"};
         System.out.println(listanags(arr));
-    }
+    }*/
 
-    public static List<List<String>> listanags(String[] arr){
+    public List<List<String>> listanags(String[] arr){
         int i=0, j=0;
         boolean[] check=new boolean[arr.length];
         List<List<String>> outer=new ArrayList<>();
@@ -28,7 +28,7 @@ public class day10_anagrams {
         }
         return outer;
     }
-   public static boolean binary(ArrayList<String> list, String target){
+   public boolean binary(ArrayList<String> list, String target){
         int start=0, end=list.size()-1;
         while(start<=end){
             int mid=(start+end)/2;
@@ -41,7 +41,7 @@ public class day10_anagrams {
         return false;
     }
 
-    static ArrayList<String> permute(String p, String up){
+    public ArrayList<String> permute(String p, String up){
         ArrayList<String> list=new ArrayList<>();
         if(up.isEmpty()){
         list.add(p);
